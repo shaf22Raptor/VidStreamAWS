@@ -1,0 +1,387 @@
+/* General Body Styles */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;;
+  background-color: #282c34;
+  color: white;
+}
+
+/* Styling of head of home page */
+.head {
+  background-color: #003c72;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  border-bottom: 4px solid #003c72;
+  padding-top:2%;
+  padding-bottom:3%;
+}
+
+.head h1 {
+  margin: 0;
+  letter-spacing: 0.05em;
+  font-size: 6.5em;
+  font-weight: bold;
+}
+
+.head p {
+  margin: 10px 0;
+  font-size: 2.2em;
+  font-weight: 300;
+}
+
+.head button {
+  margin-top: 30px;
+  margin-right:30px;
+  padding: 10px 20px;
+  font-size: 1.5em;
+  color: #003c72;
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.head button:hover {
+  transform: translateY(-5px);
+}
+
+/* Styling for local library of videos stored on local server */
+.video-library {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  vertical-align: middle;
+}
+
+.recommended h1 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+/* Video Thumbnails Styling */
+.recommended {
+  flex-wrap: wrap;
+}
+
+.thumbnails {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.video {
+  padding:10px;
+}
+
+/* Add scrolling to video thumbnails */
+.thumbnails::-webkit-scrollbar {
+  height: 15px;
+}
+.thumbnails::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 4px;
+}
+
+.thumbnails::-webkit-scrollbar-track {
+  background-color: #f1f1f100;
+}
+
+/* Decoration around the video in video library section */
+.video-link {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  margin-right:20px;
+  width: 100%;
+  max-width: 300px;
+  text-align: left;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.video-link a {
+  font-size: 1.1em;
+  padding-left: 10px;
+  color:black; 
+  overflow: hidden;               
+  white-space: nowrap;
+}
+
+/* Footer Styling */
+.footer {
+  background-color: #6200ea;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer p {
+  margin: 0;
+}
+
+/* Login Page Container */
+.login-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #282c34;
+}
+
+.login-page h2 {
+  font-size: 2.2em;
+}
+
+/* Form Styles */
+form {
+  background-color: #003c72;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Input Field Styles */
+input {
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+label {
+  display: block;
+  font-size: 1.1em;
+  margin-bottom: 8px;
+  color: #ffffff;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+/* Button Styles in login page */
+.login-button,
+.home-button {
+  width: 100%;
+  padding: 12px;
+  font-size: 1.1em;
+  color: #003c72;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover,
+.home-button:hover {
+  color:#ffffff;
+  background-color: #3700b3;
+}
+
+/* Error Message in login page */
+.errorMessage {
+  color: red;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Heading Styles */
+.heading {
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 30px;
+  font-size: 2em;
+}
+
+/* Styling for upload page-container */
+.upload-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #282c34;
+  color: #ffffff;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.upload-page h2 {
+  font-size:2.2em;
+}
+
+.upload-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #003c72;
+  border-radius: 8px;
+  color: #ffffff;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.upload-page h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.upload-page label {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  display: block;
+  color: #ffffff;
+}
+
+.upload-page input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 1em;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  color: #003c72;
+  border: 2px solid #003c72;
+  cursor: pointer;
+}
+
+.submit {
+  width: 100%;
+  padding: 12px;
+  font-size: 1.1em;
+  color: #003c72;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.submit:hover {
+  background-color: #3700b3;
+  color: #ffffff;
+}
+
+.upload-page p {
+  margin-top: 20px;
+  font-size: 1.1em;
+  color: #ffffff;
+}
+
+.home-button {
+  background-color: #282c34;
+  color: #ffffff;
+}
+
+.home-button:hover {
+  background-color: #3b4a61;
+}
+
+/* Styling for video-player page */
+.video-player {
+  justify-content: space-between;
+  padding:5%;
+}
+
+.video-panel {
+  width:60%;
+}
+
+.video-panel button {
+  background-color: white; 
+  color: #003c72;              
+  padding: 10px 20px;        
+  border: none;              
+  border-radius: 5px;        
+  cursor: pointer;         
+  font-size: 20px;  
+  transition: background-color 0.3s ease; 
+  width:100%;
+}
+
+
+.video-panel button:hover {
+  background-color: #3700b3;
+  color: #ffffff;
+}
+
+.recommended-videos {
+  margin-left:40px;
+  height:100vh;
+  overflow-y:auto;
+  overflow-x: hidden;
+}
+
+.video-area {
+  width:100%;
+  height:auto;
+}
+
+.video-area video {
+  width:100%;
+  height:auto;
+}
+
+.youtube-player {
+  position:relative;
+  width: 100%;          
+  padding-bottom: 56.25%; /* 16:9 aspect ratio (9/16 = 0.5625 or 56.25%) */
+  height: 0;          
+}
+
+.youtube-player iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.recommended-videos::-webkit-scrollbar {
+  height: 15px;
+}
+.recommended-videos::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 4px;
+}
+
+.recommended-videos::-webkit-scrollbar-track {
+  background-color: #f1f1f100;
+}
+
+.youtube-videos {
+  list-style-type:none;
+  padding: 0;
+  width:35%;
+}
+
+.youtube-videos a {
+  color:white;
+  text-decoration: none;   
+  overflow: hidden;           
+  text-overflow: ellipsis;     
+  width: 500px;   
+  white-space: nowrap;
+  display: inline-block;       
+}
+
